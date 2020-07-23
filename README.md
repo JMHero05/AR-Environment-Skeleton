@@ -22,4 +22,6 @@ You should have a completed seeds file for testing
 Answer the following questions:
 
 Which method(s) does Active Record create for you?
+Active Record creates many of the basic methods for calling certain aspects of a particular class instance. (.first_name, .last_name, etc...) Also, it creates the .all class method.
 Which method(s) did you have to create yourself? Why? 
+The methods I created fall outside of those basic parameters of (key: value) But, Using the basic methods I can create more complex methods easier, such as, full_name .all_in_grade
