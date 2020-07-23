@@ -31,3 +31,11 @@ Add these deliverables:
 - A Student belongs to a Teacher
 - Student#teacher should return the teacher that student belongs to
 - Teacher#students should return a list of all the students that belong to this teacher
+
+Make all necessary changes to satisfy these deliverables: 
+- A Student has many Teachers through GradeLevel
+- A Teacher has many Students through GradeLevel
+You should have a complete seeds file 
+Answer the following questions:
+- What changes did you make to your app? Why?
+I rolled back the previous deliverables to remove the teacher_id from the Student class.  This gave me the opportunity to create the new table grade_levels through a new migration.  In the grade_levels table I connected Teacher and Student through teacher_id and student_id.  I added the AR methods for has_many, and has_many through to Student and Teacher to create the relationship they had through the joiner GradeLevel, where I added belongs_to methods for Teacher and Student.  In the seeds file I then created new GradeLevel instances and attached them to different Teacher and Student instances.

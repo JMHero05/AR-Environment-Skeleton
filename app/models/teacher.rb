@@ -1,5 +1,6 @@
 class Teacher < ActiveRecord::Base
   has_many :students
+  has_many :students, through: :gradelevel
 
   # Teacher#tenure should return true if a teacher has taught more than 5 years, otherwise false
 
