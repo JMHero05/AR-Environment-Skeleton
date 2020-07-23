@@ -25,3 +25,9 @@ Which method(s) does Active Record create for you?
 Active Record creates many of the basic methods for calling certain aspects of a particular class instance. (.first_name, .last_name, etc...) Also, it creates the .all class method.
 Which method(s) did you have to create yourself? Why? 
 The methods I created fall outside of those basic parameters of (key: value) But, Using the basic methods I can create more complex methods easier, such as, full_name .all_in_grade
+
+
+Add these deliverables:
+- A Student belongs to a Teacher
+- Student#teacher should return the teacher that student belongs to
+- Teacher#students should return a list of all the students that belong to this teacher
