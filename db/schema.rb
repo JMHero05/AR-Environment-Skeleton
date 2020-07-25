@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_24_134422) do
+ActiveRecord::Schema.define(version: 2020_07_24_195753) do
+
+  create_table "after_school_program_students", force: :cascade do |t|
+    t.integer "after_school_program_id"
+    t.integer "student_id"
+  end
+
+  create_table "after_school_program_teachers", force: :cascade do |t|
+    t.integer "after_school_program_id"
+    t.integer "teacher_id"
+  end
+
+  create_table "after_school_programs", force: :cascade do |t|
+    t.string "activity"
+    t.string "day"
+    t.integer "length"
+  end
 
   create_table "grade_levels", force: :cascade do |t|
     t.integer "teacher_id"
